@@ -1,47 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Kalkulator</title>
-    <style>
-      button {
-        width: 100%;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Segitiga</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <table>
-      <tr>
-        <th colspan="4"><input type="text" name="display" /></th>
-      </tr>
-      <tr>
-        <td colspan="2"><button>AC</button></td>
-        <td><button>C</button></td>
-        <td><button>*</button></td>
-      </tr>
-      <tr>
-        <td><button>7</button></td>
-        <td><button>8</button></td>
-        <td><button>9</button></td>
-        <td><button>/</button></td>
-      </tr>
-      <tr>
-        <td><button>4</button></td>
-        <td><button>5</button></td>
-        <td><button>6</button></td>
-        <td><button>+</button></td>
-      </tr>
-      <tr>
-        <td><button>1</button></td>
-        <td><button>2</button></td>
-        <td><button>3</button></td>
-        <td><button>-</button></td>
-      </tr>
-      <tr>
-        <td><button>+-</button></td>
-        <td><button>0</button></td>
-        <td><button>.</button></td>
-        <td><button>=</button></td>
-      </tr>
-    </table>
+    <head>
+      <section class="judul">
+        <h1>Welcome to Calculator S3</h1>
+        <section>
+          <p>Hi Sobat. Selamat datang di kalkulator segitiga</p>
+        </section>
+      </section>
+    </head>
+
+    <section class="part-top">
+      <h4>Segitiga</h4>
+      <div>
+        <h6 type="button" href="#">Switch Keliling Segitiga</h6>
+      </div>
+    </section>
+
+    <section>
+      <div class="part-mid">
+        <head>
+          <h2>Luas Segitiga</h2>
+        </head>
+        <img src="img/img-s3.jpeg" alt="Gamabar" />
+      </div>
+      <div class="part-mid-2">
+        <section>
+          <h5>Rumus Luas Segitiga</h5>
+          <p id="p-1"><b>L = 1/2 x a x t</b></p>
+          <p>
+            Keterangan:<br />
+            L = Luas segitiga<br />
+            a = alas <br />
+            t = tinggi
+          </p>
+        </section>
+      </div>
+    </section>
+    <hr />
+    <!-- Bagian Input -->
+    <section>
+      <div>
+        <h2 id="input-title">Hitung Luas Segitiga</h2>
+      </div>
+      <form action="">
+        <div class="part-input">
+          <input type="number" placeholder="masukan nilai alas" /><br />
+          <input type="number" placeholder="masukan nilai tinggi" />
+          <button id="btn-hitung" onclick="">Hitung</button><br />
+          <button id="rm-btn">Clear</button>
+        </div>
+      </form>
+    </section>
   </body>
 </html>

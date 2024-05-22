@@ -1,1 +1,81 @@
 /* ini css */
+.judul {
+  text-align: center;
+}
+
+.part-top {
+  text-align: center;
+  color: aliceblue;
+}
+.part-top > h4 {
+  background-color: cadetblue;
+}
+
+h6 {
+  width: 100%;
+  border: 0px;
+  color: cadetblue;
+  padding-top: 0px;
+}
+
+.part-mid {
+  text-align: center;
+}
+.part-mid > h2 {
+  background-color: cadetblue;
+  height: 30px;
+  text-decoration: double;
+  color: aliceblue;
+}
+
+.part-mid > img {
+  width: 200px;
+  height: 200px;
+}
+
+/* part-mid-2 */
+.part-mid-2 {
+  text-align: start;
+}
+
+#p-1 {
+  text-align: center;
+}
+
+/* part-input */
+#input-title {
+  text-align: center;
+}
+.part-input > input {
+  width: 100%;
+  border: 1px cadetblue;
+}
+
+.btn1 {
+  align-items: center;
+}
+
+#btn-hitung {
+  float: left; /* Float the button to the left */
+  width: 100px; /* Set a fixed width for the button */
+  padding: 10px;
+  margin: 10px auto; /* Center the button using margins */
+  margin-top: 150px;
+  border-radius: 5px;
+  place-items: center;
+  border: none;
+  color: white;
+  background-color: rgb(8, 140, 255);
+}
+
+#rm-btn {
+  float: right;
+  border: none;
+  width: 60px;
+  margin: 10px;
+  padding: 10px;
+  margin-top: 160px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(255, 201, 8);
+}
