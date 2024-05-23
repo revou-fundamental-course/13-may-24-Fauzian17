@@ -3,9 +3,9 @@ function hitungLuasSegitiga(event) {
   event.preventDefault();
   const alas = parseFloat(document.form.alas.value);
   const tinggi = parseFloat(document.form.tinggi.value);
-
+  // Validasi form kosong dari luas segitiga
   if (isNaN(alas) || isNaN(tinggi)) {
-    alert("Please enter valid numbers for alas and tinggi.");
+    alert("Silahkan masukan angka yang valid untuk alas and tinggi.");
     return false;
   }
   // Rumus luas segitiga
@@ -28,13 +28,16 @@ function hitungKelilingSegitiga(event) {
   const sisiB = parseFloat(document.forms["keliling-form"].sisiB.value);
   const sisiC = parseFloat(document.forms["keliling-form"].sisiC.value);
 
+  // Validasi form kosong dari luas segitiga
   if (isNaN(sisiA) || isNaN(sisiB) || isNaN(sisiC)) {
     alert("Silakan masukkan angka yang valid untuk panjang sisi.");
     return false;
   }
+
   //Rumus keliling segitiga
   const keliling = sisiA + sisiB + sisiC;
-  // Penulisan hasil ke halaman html
+
+  // Penulisan hasil ke halaman html dari keliling segitiga
   document.getElementById("keliling-hasil").innerText = `Diketahui:\n
   Sisi A = ${sisiA}\n
   Sisi B = ${sisiB}\n
