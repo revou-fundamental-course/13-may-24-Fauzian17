@@ -1,21 +1,33 @@
-/* ini css */
 .judul {
   text-align: center;
+  color: rgb(81, 137, 139);
+  border-radius: 0;
 }
 
 .part-top {
   text-align: center;
   color: aliceblue;
 }
-.part-top > h4 {
+.part-top > h3 {
   background-color: cadetblue;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+#btn-switch {
+  color: cadetblue;
+  width: 100%;
+  border: none;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 h6 {
-  width: 100%;
-  border: 0px;
+  display: inline-block;
   color: cadetblue;
-  padding-top: 0px;
+  cursor: pointer;
+  margin: 10px 0;
 }
 
 .part-mid {
@@ -26,56 +38,132 @@ h6 {
   height: 30px;
   text-decoration: double;
   color: aliceblue;
+  padding: 10px;
+  border-radius: 3px;
 }
 
 .part-mid > img {
   width: 200px;
   height: 200px;
+  margin-top: 10px;
+  border-radius: 5px;
 }
 
-/* part-mid-2 */
 .part-mid-2 {
   text-align: start;
+  margin-top: 10px;
 }
 
 #p-1 {
   text-align: center;
 }
 
-/* part-input */
 #input-title {
   text-align: center;
-}
-.part-input > input {
-  width: 100%;
-  border: 1px cadetblue;
+  margin-top: 20px;
 }
 
-.btn1 {
-  align-items: center;
+.part-input {
+  width: 100%;
+  border: 1px solid cadetblue;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  position: relative;
+}
+
+.part-input p {
+  margin: 10px 0;
+}
+
+.part-input input {
+  width: calc(100% - 20px);
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid cadetblue;
+  border-radius: 5px;
+}
+
+#form-hasil {
+  border: none;
+  background-color: white;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100px;
+  position: relative;
 }
 
 #btn-hitung {
-  float: left; /* Float the button to the left */
-  width: 100px; /* Set a fixed width for the button */
+  width: 100px;
   padding: 10px;
-  margin: 10px auto; /* Center the button using margins */
-  margin-top: 150px;
+  margin: 10px;
   border-radius: 5px;
-  place-items: center;
   border: none;
   color: white;
   background-color: rgb(8, 140, 255);
+  cursor: pointer;
 }
 
 #rm-btn {
-  float: right;
-  border: none;
-  width: 60px;
-  margin: 10px;
+  width: 100px;
   padding: 10px;
-  margin-top: 160px;
+  margin: 10px;
   border-radius: 5px;
+  border: none;
   color: white;
   background-color: rgb(255, 201, 8);
+  cursor: pointer;
+  right: 0;
+  bottom: 0;
+}
+
+#btn-hitung:hover,
+#rm-btn:hover {
+  opacity: 0.8;
+}
+
+#btn-hitung-keliling {
+  width: 100px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: rgb(8, 140, 255);
+  cursor: pointer;
+}
+
+#rm-btn-keliling {
+  width: 100px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: rgb(255, 201, 8);
+  cursor: pointer;
+  right: 0;
+  bottom: 0;
+}
+
+#btn-hitung-keliling:hover,
+#rm-btn-keliling:hover {
+  opacity: 0.8;
+}
+
+footer {
+  font-size: x-small;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(246, 246, 246);
+}
+
+footer p {
+  margin: 0;
 }

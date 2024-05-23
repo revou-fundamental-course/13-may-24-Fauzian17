@@ -5,58 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kalkulator Segitiga</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/scripts.js"></script>
   </head>
   <body>
-    <head>
-      <section class="judul">
-        <h1>Welcome to Calculator S3</h1>
-        <section>
-          <p>Hi Sobat. Selamat datang di kalkulator segitiga</p>
-        </section>
-      </section>
-    </head>
 
+    <!-- Bagian judul dan nama -->
+    <section class="judul">
+      <head>
+        <h1>Welcome to Calculator Segitiga</h1>
+        <p>Hi Sobat. Selamat datang di kalkulator segitiga</p>
+      </head>
+    </section>
     <section class="part-top">
-      <h4>Segitiga</h4>
+      <h3>Segitiga</h3>
       <div>
-        <h6 type="button" href="#">Switch Keliling Segitiga</h6>
+        <button id="btn-switch" onclick="scrollToElement('keliling-content')"> Switch Keliling Segitiga</button>
       </div>
     </section>
 
-    <section>
+    <!-- Luas Segitiga -->
+    <section id="luas-content">
       <div class="part-mid">
-        <head>
-          <h2>Luas Segitiga</h2>
-        </head>
-        <img src="img/img-s3.jpeg" alt="Gamabar" />
+        <h2>Luas Segitiga</h2>
+        <img src="img/img-s3.jpeg" alt="Gambar" />
       </div>
       <div class="part-mid-2">
-        <section>
-          <h5>Rumus Luas Segitiga</h5>
-          <p id="p-1"><b>L = 1/2 x a x t</b></p>
-          <p>
-            Keterangan:<br />
-            L = Luas segitiga<br />
-            a = alas <br />
-            t = tinggi
-          </p>
-        </section>
+        <h5>Rumus Luas Segitiga</h5>
+        <p id="p-1"><b>L = 1/2 x a x t</b></p>
+        <p>
+          Keterangan:<br />
+          L = Luas segitiga<br />
+          a = Alas <br />
+          t = Tinggi
+        </p>
       </div>
     </section>
     <hr />
-    <!-- Bagian Input -->
+    <!-- Bagian Input Form Luas Segitiga-->
     <section>
-      <div>
-        <h2 id="input-title">Hitung Luas Segitiga</h2>
-      </div>
-      <form action="">
+      <h2 id="input-title">Hitung Luas Segitiga</h2>
+      <form name="form" onsubmit="return hitungLuasSegitiga(event)">
         <div class="part-input">
-          <input type="number" placeholder="masukan nilai alas" /><br />
-          <input type="number" placeholder="masukan nilai tinggi" />
-          <button id="btn-hitung" onclick="">Hitung</button><br />
-          <button id="rm-btn">Clear</button>
+          <p>Alas <br /><input type="number" name="alas" placeholder="Masukan nilai alas" required /></p>
+          <p>Tinggi <br /><input type="number" name="tinggi" placeholder="Masukan nilai tinggi" required /></p>
+          <p>Hasil <br /><p id="form-hasil"></p></p>
+          <!-- Bagian Input Form Luas Segitiga -->
+          <div class="buttons">
+            <button type="submit" id="btn-hitung"><b>Hitung</b></button>
+            <button type="button" id="rm-btn" onclick="clearForm()"><b>Clear</b></button>
+          </div>
         </div>
       </form>
+    <hr/>
+
+    <!-- Keliling Segitiga -->
+    <section class="part-top">
+      <h3>Segitiga</h3>
+      <div>
+        <button id="btn-switch" onclick="scrollToElement('luas-content')">Switch Luas Segitiga</button>
+      </div>
     </section>
+
+    <section id="keliling-content">
+      <div class="part-mid">
+        <h2>Keliling Luas Segitiga</h2>
+        <img src="img/img-s3.jpeg" alt="Gambar" />
+      </div>
+      <div class="part-mid-2">
+        <h5>Rumus Luas Segitiga</h5>
+        <p id="p-1"><b>K = a + b + c</b></p>
+        <p>
+          Keterangan:<br />
+          K = keliling segitiga<br />
+          a = Sisi A <br />
+          b = Sisi B <br />
+          c = Sisi C <br />
+        </p>
+      </div>
+    </section>
+    <hr />
+    <!-- Bagian Input Form Keliling Segitiga-->
+   <section>
+    <h2 class="part-mid">Hitung Keliling Segitiga</h2>
+    <form name="keliling-form" onsubmit="return hitungKelilingSegitiga(event)">
+      <div class="part-input">
+        <p>Sisi A <br /><input type="number" name="sisiA" placeholder="Masukkan panjang sisi A" required /></p>
+        <p>Sisi B <br /><input type="number" name="sisiB" placeholder="Masukkan panjang sisi B" required /></p>
+        <p>Sisi C <br /><input type="number" name="sisiC" placeholder="Masukkan panjang sisi C" required /></p>
+        <p>Hasil <br /><p id="keliling-hasil"></p></p>
+        <!-- Bagian tombol keliling segitiga -->
+        <div class="buttons">
+          <button type="submit" id="btn-hitung-keliling">Hitung</button>
+          <button type="button" id="rm-btn-keliling" onclick="clearKelilingForm()">Clear</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <section>
+    <footer>
+    <p>
+     Fundamental Course Software Engineer by RevoU
+    </p>
+    <p style="padding-bottom: 1px;">Fajar Fauzi</p>
+   
+    </footer>
+  </section>
+  <script src="js/scripts.js"></script>
   </body>
 </html>
