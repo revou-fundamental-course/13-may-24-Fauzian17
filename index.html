@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kalkulator Segitiga</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/scripts.js"></script>
   </head>
   <body>
 
@@ -49,13 +48,15 @@
           <p>Alas <br /><input type="number" name="alas" placeholder="Masukan nilai alas" required /></p>
           <p>Tinggi <br /><input type="number" name="tinggi" placeholder="Masukan nilai tinggi" required /></p>
           <p>Hasil <br /><p id="form-hasil"></p></p>
-          <!-- Bagian Input Form Luas Segitiga -->
+
+          <!-- Bagian Button Luas Segitiga -->
           <div class="buttons">
             <button type="submit" id="btn-hitung"><b>Hitung</b></button>
             <button type="button" id="rm-btn" onclick="clearForm()"><b>Clear</b></button>
           </div>
         </div>
       </form>
+    </section>
     <hr/>
 
     <!-- Keliling Segitiga -->
@@ -64,10 +65,9 @@
         <button id="btn-switch" onclick="scrollToElement('luas-content')">Switch Luas Segitiga</button>
       </div>
     </section>
-
     <section id="keliling-content">
       <div class="part-mid">
-        <h2>Keliling Luas Segitiga</h2>
+        <h2>Keliling Segitiga</h2>
         <img src="img/img-s3.jpeg" alt="Gambar" />
       </div>
       <div class="part-mid-2">
@@ -83,33 +83,35 @@
       </div>
     </section>
     <hr />
+    
     <!-- Bagian Input Form Keliling Segitiga-->
-   <section>
-    <h2 class="part-mid">Hitung Keliling Segitiga</h2>
-    <form name="keliling-form" onsubmit="return hitungKelilingSegitiga(event)">
-      <div class="part-input">
-        <p>Sisi A <br /><input type="number" name="sisiA" placeholder="Masukkan panjang sisi A" required /></p>
-        <p>Sisi B <br /><input type="number" name="sisiB" placeholder="Masukkan panjang sisi B" required /></p>
-        <p>Sisi C <br /><input type="number" name="sisiC" placeholder="Masukkan panjang sisi C" required /></p>
-        <p>Hasil <br /><p id="keliling-hasil"></p></p>
-        <!-- Bagian tombol keliling segitiga -->
-        <div class="buttons">
-          <button type="submit" id="btn-hitung-keliling">Hitung</button>
-          <button type="button" id="rm-btn-keliling" onclick="clearKelilingForm()">Clear</button>
-        </div>
-      </div>
-    </form>
-  </section>
+    <section>
+      <h2 class="part-mid">Hitung Keliling Segitiga</h2>
+      <form name="keliling-form" onsubmit="return hitungKelilingSegitiga(event)">
+        <div class="part-input">
+          <p>Sisi A <br /><input type="number" name="sisiA" placeholder="Masukkan panjang sisi A" required /></p>
+          <p>Sisi B <br /><input type="number" name="sisiB" placeholder="Masukkan panjang sisi B" required /></p>
+          <p>Sisi C <br /><input type="number" name="sisiC" placeholder="Masukkan panjang sisi C" required /></p>
+          <p>Hasil <br /><p id="keliling-hasil"></p></p>
 
-  <section>
-    <footer>
-    <p>
-     Fundamental Course Software Engineer by RevoU
-    </p>
-    <p style="padding-bottom: 1px;">Fajar Fauzi</p>
-   
-    </footer>
-  </section>
-  <script src="js/scripts.js"></script>
+          <!-- Bagian button keliling segitiga -->
+          <div class="buttons">
+            <button type="submit" id="btn-hitung-keliling">Hitung</button>
+            <button type="button" id="rm-btn-keliling" onclick="clearKelilingForm()">Clear</button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+  <!-- Bagian footer -->
+    <section>
+      <footer>
+        <p>
+        Fundamental Course Software Engineer by RevoU
+        </p>
+        <p style="padding-bottom: 1px;">Fajar Fauzi</p>
+      </footer>
+    </section>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

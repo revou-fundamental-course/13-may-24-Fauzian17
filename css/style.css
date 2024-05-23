@@ -1,9 +1,11 @@
+/* css judul */
 .judul {
   text-align: center;
   color: rgb(81, 137, 139);
   border-radius: 0;
 }
 
+/* css part-top */
 .part-top {
   text-align: center;
   color: aliceblue;
@@ -30,6 +32,7 @@ h6 {
   margin: 10px 0;
 }
 
+/* css part-mid */
 .part-mid {
   text-align: center;
 }
@@ -49,6 +52,7 @@ h6 {
   border-radius: 5px;
 }
 
+/* css part-mid-2 */
 .part-mid-2 {
   text-align: start;
   margin-top: 10px;
@@ -58,6 +62,7 @@ h6 {
   text-align: center;
 }
 
+/* css form input */
 #input-title {
   text-align: center;
   margin-top: 20px;
@@ -89,6 +94,7 @@ h6 {
   background-color: white;
 }
 
+/* css button  */
 .buttons {
   display: flex;
   justify-content: center;
@@ -155,6 +161,7 @@ h6 {
   opacity: 0.8;
 }
 
+/* css footer */
 footer {
   font-size: x-small;
   display: flex;
